@@ -5,12 +5,12 @@ function Body() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-      axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+      axios.get("https://api.nasa.gov/planetary/apod?api_key=mUEdXXfN22zkTIhgfvZFiohXHVuaJsGDb6c4yizI")
         
         .then(response => {
             console.log("NASA:", response)
-            const info = response.data.title;
-            setData(info);
+            //const info = response.data.title;
+            setData(response.data);
         })
 
         .catch(error => {
@@ -18,11 +18,13 @@ function Body() {
         });
 
 
-    },);
+    },[]);
   
-    return <div>
-        {data}
-    </div>;
+    return (<div><h1>
+        {data.title}
+    </h1>
+    <p>{data.date}</p>
+    </div>)
   }
 
 
