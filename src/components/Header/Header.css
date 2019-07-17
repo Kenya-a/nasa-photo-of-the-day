@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 15px;
+
+
+}
+li{
+    margin-top: 15px;
+    width: 7rem;
+}
