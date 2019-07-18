@@ -6,7 +6,7 @@ function Body() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("https://api.nasa.gov/planetary/apod?api_key=mUEdXXfN22zkTIhgfvZFiohXHVuaJsGDb6c4yizI")
+   axios.get("https://api.nasa.gov/planetary/apod?api_key=mUEdXXfN22zkTIhgfvZFiohXHVuaJsGDb6c4yizI")
 
       .then(response => {
         console.log("NASA:", response)
@@ -22,17 +22,28 @@ function Body() {
   }, []);
 
   return (<div>
-
+    <Img src={data.url} alt ="content"></Img>
+    <div>
     <h1>{data.title}</h1>
-    <p>{data.date}</p>
-    <img src={data.url} alt ="content"></img>
-    <p type = "information">{data.explanation}</p>
+    <Paragraph>{data.date}</Paragraph>
+    <Paragraph type = "information">{data.explanation}</Paragraph>
+    </div>
   </div>)
 }
 
 
 export default Body;
 
-//CSS
+//Styled Components
 
+const Img = styled.img`
+  width: 100%;
+`;
+const Paragraph = styled.p`
+  margin: 0 160px;
+
+  ${props => (props.type === "information" ? `
+  margin: 30px
+  `: null )}
+`;
 

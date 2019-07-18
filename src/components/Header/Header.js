@@ -6,7 +6,7 @@ function Header(){
     return (
         <div className = "header">
             <h1>NASA</h1>
-            <Image src ="https://images.unsplash.com/photo-1484589065579-248aad0d8b13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt = "space"></Image>
+            {/* <Image src ="https://images.unsplasrc/components/Images/spacebar.png" alt = "space"></Image> */}
             <nav>
                 <li>Home</li>
                 <li>About</li>

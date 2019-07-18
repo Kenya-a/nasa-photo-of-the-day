@@ -1,7 +1,10 @@
+*{
+  background: #7878c2;
+  color: #2e0512;
+}
 .App {
   text-align: center;
-  background: black;
-  color: white;
+  
 }
 
 .App-logo {
