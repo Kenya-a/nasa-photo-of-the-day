@@ -24,6 +24,7 @@ function Body() {
         {data.title}
     </h1>
     <p>{data.date}</p>
+    {data.media_type}
     </div>)
   }
 
