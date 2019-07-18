@@ -5,8 +5,7 @@ import styled from "styled-components";
 function Header(){
     return (
         <div className = "header">
-            <h1>NASA</h1>
-            {/* <Image src ="https://images.unsplasrc/components/Images/spacebar.png" alt = "space"></Image> */}
+            <h1> <Image src ="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt = "space"></Image></h1>
             <nav>
                 <li>Home</li>
                 <li>About</li>
@@ -22,5 +21,5 @@ export default Header;
 //Styled Components
 
 const Image = styled.img`
-    width: 175px;
+    width: 250px;
 `
