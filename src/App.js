@@ -12,10 +12,10 @@ function App() {
       <div className="Body">
        <Body />
     </div>
-      <p>
+      {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
-      </p>
+      </p> */}
     </div>
     
   );

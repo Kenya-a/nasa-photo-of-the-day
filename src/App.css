@@ -1,5 +1,5 @@
 *{
-  background: black;
+
   color: white;
 }
 .App {
@@ -35,4 +35,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background: black;
 }

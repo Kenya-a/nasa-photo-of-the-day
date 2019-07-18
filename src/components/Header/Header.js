@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 function Header(){
     return (
-        <div className = "header">
+        <HeaderLogo className = "header">
             <h1> <Image src ="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt = "space"></Image></h1>
             <nav>
                 <li>Home</li>
@@ -12,7 +12,7 @@ function Header(){
                 <li>Cool Stuff</li>
                 
             </nav>
-        </div>
+        </HeaderLogo>
     )
 }
 export default Header;
@@ -22,4 +22,9 @@ export default Header;
 
 const Image = styled.img`
     width: 250px;
+
+`;
+
+const HeaderLogo = styled.div`
+    background-image: url(https://wallpaperaccess.com/full/741658.jpg)
 `

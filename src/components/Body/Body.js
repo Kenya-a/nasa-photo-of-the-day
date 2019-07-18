@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
+//import { Button, Divider, Image, Transition } from 'semantic-ui-react'
 
 function Body() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-   axios.get("https://api.nasa.gov/planetary/apod?api_key=mUEdXXfN22zkTIhgfvZFiohXHVuaJsGDb6c4yizI")
+  axios.get("https://api.nasa.gov/planetary/apod?api_key=mUEdXXfN22zkTIhgfvZFiohXHVuaJsGDb6c4yizI")
 
       .then(response => {
         console.log("NASA:", response)
@@ -28,7 +29,9 @@ function Body() {
     <Paragraph>{data.date}</Paragraph>
     <Paragraph type = "information">{data.explanation}</Paragraph>
     </div>
-  </div>)
+    
+  </div>
+  )
 }
 
 
@@ -46,4 +49,5 @@ const Paragraph = styled.p`
   margin: 30px
   `: null )}
 `;
+
 

@@ -4,10 +4,11 @@ nav{
     text-decoration: none;
     list-style: none;
     margin-bottom: 15px;
-
+    background: #333333;
 
 }
 li{
-    margin-top: 15px;
+    padding: 5px;
     width: 7rem;
+    background:#333333;
 }
