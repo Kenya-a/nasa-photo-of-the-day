@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 15px;
+    background: #333333;
+
+}
+li{
+    padding: 5px;
+    width: 7rem;
+    background:#333333;
+}
